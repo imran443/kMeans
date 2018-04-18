@@ -76,6 +76,9 @@ def main():
 
     fig, ax = plt.subplots()
     fig2, ax2 = plt.subplots()
+
+    fig.canvas.set_window_title('SepalLengthCm and SepalWidthCm')
+    fig2.canvas.set_window_title('PetalLengthCm and PetalWidthCm')
     
     # Plot the SepalLengthCm and SepalWidthCm
     ax.scatter(c[0:3, 0], c[0:3:,1] , marker='*' , c='black', s=200)
